@@ -6,4 +6,6 @@ repository.
 git remote add origin https://github.com/irahulingle/git-learning.git ->
 this command tells u to where you have to store this file/folder.
 
-git fetch -v -> This command is used to find 
+git fetch -v -> This command is used to find / download repository
+
+git add . -> this command is used to add file/folder 
