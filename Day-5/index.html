@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var arr=[2,5,9,6,7,8,4];
+        //  for (let i = 0; i < arr.length; i++) {
+        //     if(arr[i]===6){
+        //         let ele=arr.slice(i)
+        //         console.log(ele)
+        //     }
+            
+        // }
+
+        function remove_data(arr,n){
+            var ele = arr.indexOf(n)
+            if(ele > -1){
+                arr.splice(ele,1)   
+            }
+            return arr;
+        }
+        let arr=[2,5,9,6,7,8,4];
+        console.log(remove_data(arr,9))
+
+        let array=[2,5,9,6,7,8,4];
+        function remove(array,res){
+            for(let i=0;i<res.length;i++){
+                let index=array.indexOf(res[i])
+                    if(index > -1){
+                    arr.splice(index,1)   
+                }
+            }
+            return array;
+        }
+        let res=[9,7];
+        console.log(remove(arr,res))
+
+       
+    </script>
+</body>
+</html>

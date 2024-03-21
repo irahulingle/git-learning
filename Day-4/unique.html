@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [7,6,5,4,4,5,6,7,8,2,2,3,3]
+        
+        let task = function(){
+            let res = [];
+            for(let i=0;i<arr.length;i++){
+                if(arr.lastIndexOf(arr[i])!==arr.indexOf(arr[i])){
+                    continue;
+                }
+                res.push(arr[i]) 
+            }
+            return res;
+        }
+        console.log(task(arr))
+
+        var temp={};
+        var res =function(array){
+            for(var i=0;i<array.length;i++){
+                var ele=array[i];
+                if(temp[ele]){
+                    temp[ele]++
+                }else{
+                    temp[ele]=1
+                }
+            }
+
+            for(var key in temp){
+                if(temp[key]==1)
+                return key
+            }
+        }
+        console.log(res[4,4,7,9,23,7,5,7,51,52,7,3,8,4,6,2,1,9,3])
+    </script>
+</body>
+</html>
